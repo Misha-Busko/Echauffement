@@ -23,8 +23,7 @@ class Program
 
         // Etape 3 : affichez soit "Tu es majeur", soit "Tu es mineur" dépendant de l'âge fourni par l'utilisateur
         
-        int ages = Convert.ToInt32(Console.ReadLine());
-        if (ages >= 18)
+        if (age >= 18)
         {
             Console.WriteLine("Tu es majeur ");
         }
@@ -42,8 +41,8 @@ class Program
         Console.WriteLine("\n --- Coix d'armes ---");
         Console.WriteLine("Dynamite = $ 1.00 ");
         Console.WriteLine("Couteau = $ 10.00 ");
-        Console.WriteLine("");
-        Console.WriteLine("");
+        Console.WriteLine("Revolver = $ 35.00 ");
+        Console.WriteLine("Vinchester = $ 120.00 ");
 
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
 
@@ -65,15 +64,36 @@ class Program
         }
         else if (choix == 2)
         {
-
+            if (euros > 10.0f)
+            {
+                Console.WriteLine("T'as assé d'argents");
+            }
+            else
+            {
+                Console.WriteLine("T'as pas assé d'argent");
+            }
         }
         else if (choix == 3)
         {
-
+            if (euros > 35.0f)
+            {
+                Console.WriteLine("T'as assé d'argents");
+            }
+            else
+            {
+                Console.WriteLine("T'as pas assé d'argent");
+            }
         }
         else if (choix == 4)
         {
-
+            if (euros > 120.0f)
+            {
+                Console.WriteLine("T'as assé d'argents");
+            }
+            else
+            {
+                Console.WriteLine("T'as pas assé d'argent");
+            }
         }
         else
         {
